@@ -7,6 +7,7 @@ import { Polygon, Point } from 'ol/geom';
 import { RMap, ROSM, RLayerVector, RFeature, RPopup } from 'rlayers';
 import { RStyle, RFill, RStroke } from 'rlayers/style';
 
+import 'rlayers/control/layers.css';
 import 'ol/ol.css';
 
 const center = fromLonLat([2.364, 48.82]);

@@ -10,6 +10,7 @@ import { RStyle, RFill, RStroke } from 'rlayers/style';
 import { RFeatureUIEvent } from 'rlayers/RFeature';
 
 import 'ol/ol.css';
+import 'rlayers/control/layers.css';
 
 const center = fromLonLat([2.364, 48.82]);
 
