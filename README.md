@@ -1,3 +1,3 @@
 # These are the bundling unit tests for rlayers
 
-Move along, nothing to see here
+You can use those repositories as examples for working configurations
