@@ -7,7 +7,6 @@ import { Polygon, Point } from 'ol/geom';
 
 import { RMap, ROSM, RLayerVector, RFeature, RPopup } from 'rlayers';
 import { RStyle, RFill, RStroke } from 'rlayers/style';
-import { RFeatureUIEvent } from 'rlayers/RFeature';
 
 import 'ol/ol.css';
 import 'rlayers/control/layers.css';
@@ -54,13 +53,12 @@ function App() {
               ]
             ])
           }
-          onClick={React.useCallback(
-            (e: RFeatureUIEvent) =>
+          onClick={
+            (e) =>
               e.map.getView().fit(e.target.getGeometry()!.getExtent(), {
                 duration: 250
-              }),
-            []
-          )}
+              })
+          }
         >
           <RStyle>
             <RStroke color='yellow' width={4} />
